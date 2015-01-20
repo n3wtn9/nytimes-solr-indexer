@@ -182,6 +182,7 @@
  </types>
 
  <fields>
+   <field name="_version_" type="long" indexed="true" stored="true"/>
    <field name="id" type="string" indexed="true" stored="true" required="true" />
    <!-- catchall field, containing all other searchable text fields (implemented
         via copyField further on in this schema  -->

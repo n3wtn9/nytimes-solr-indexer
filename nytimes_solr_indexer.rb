@@ -49,7 +49,7 @@ def index_dir(dir, opts={})
     if(i % 2000 == 0)
       solr.add(docs)
       solr.commit
-      solr.optimize
+      # solr.optimize # causes issues using web api
       docs = []
     end
   end  
